@@ -31,8 +31,8 @@ import setuptools
 warnings.simplefilter("ignore", category=setuptools.SetuptoolsDeprecationWarning)
 
 # The include and library dirs that we compile against.
-include_dirs = [ ".", "src" ]
-library_dirs = [ ]
+include_dirs = [ ".", "src", "pygame_sdl2_windeps/include" ]
+library_dirs = [ "pygame_sdl2_windeps/lib" ]
 
 # Extra arguments that will be given to the compiler.
 extra_compile_args = [ ]
