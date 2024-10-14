@@ -101,6 +101,7 @@ def parse_cflags(command):
         output = os.environ.get("CFLAGS", "")
 
     for i in output.split():
+        if "sys" in i: continue
         if i.startswith("-I"):
             include_dirs.append(system_path(i[2:]))
         else:
