@@ -31,6 +31,7 @@ import platform
 import shutil
 import sys
 import pathlib
+import sysconfig
 
 
 def setup_env(name):
