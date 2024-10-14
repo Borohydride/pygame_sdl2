@@ -312,7 +312,7 @@ cdef class Sprite:
                 &self.bounding_box)
             self.nodes.append(node)
 
-    cdef void adjust_rect(Sprite self, const SDL_Rect *dest, const SDL_Rect *rin, SDL_Rect *rout) nogil:
+    cdef void adjust_rect(Sprite self, const SDL_Rect *dest, const SDL_Rect *rin, SDL_Rect *rout) noexcept nogil:
         rout.x = dest.x + <int>(self._scalex * rin.x)
         rout.y = dest.y + <int>(self._scaley * rin.y)
         rout.w = <int>(self._scalex * rin.w)
