@@ -2,7 +2,7 @@
 Pygame_sdl2
 ===========
 
-This branch of Pygame is a fork of the original Pygame project, which add compile support for VC.
+This branch of Pygame is a fork of the original Pygame_sdl2 project, which add compile support for VC.
 -------
 
 Pygame_sdl2 is a reimplementation of the Pygame API using SDL2 and
